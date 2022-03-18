@@ -82,6 +82,25 @@ public class GameController {
         player.setSpace(space);
     }
 
+    public void notImplemented() {
+    }
+
+    public void finishProgrammingPhase() {
+    }
+
+    public void executePrograms() {
+    }
+
+    public void executeStep() {
+    }
+
+    public boolean moveCards(CommandCardField source, CommandCardField cardField) {
+        return false;
+    }
+
+    public void moveCurrentPlayerToSpace(Space space) {
+    }
+
     class ImpossibleMoveException extends Exception {
 
         private Player player;

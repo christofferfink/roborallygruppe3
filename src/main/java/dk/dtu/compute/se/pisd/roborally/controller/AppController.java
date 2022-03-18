@@ -17,4 +17,19 @@ public class AppController {
     }
 
 
+    public boolean isGameRunning() {
+        return false;
+    }
+
+    public void newGame() {
+    }
+
+    public void stopGame() {
+    }
+
+    public void saveGame() {
+    }
+
+    public void loadGame() {
+    }
 }
