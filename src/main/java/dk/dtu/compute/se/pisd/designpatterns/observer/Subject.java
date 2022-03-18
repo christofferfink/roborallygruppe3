@@ -76,5 +76,7 @@ public abstract class Subject {
 		}
 	}
 
-	public abstract String getStatusMessage();
+	public String getStatusMessage() {
+		return null;
+	}
 }

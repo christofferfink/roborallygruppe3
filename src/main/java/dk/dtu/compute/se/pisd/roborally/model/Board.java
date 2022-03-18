@@ -35,7 +35,7 @@ import static dk.dtu.compute.se.pisd.roborally.model.Phase.INITIALISATION;
  * @author Ekkart Kindler, ekki@dtu.dk
  *
  */
-public class Board extends Subject {
+public abstract class Board extends Subject {
 
     public final int width;
 
@@ -61,7 +61,9 @@ public class Board extends Subject {
         spaces = new Space[width][height];
         for (int x = 0; x < width; x++) {
             for(int y = 0; y < height; y++) {
-                Space space = new Space(this, x, y);
+                Space space = new Space(this, x, y) {
+
+                };
                 spaces[x][y] = space;
             }
         }

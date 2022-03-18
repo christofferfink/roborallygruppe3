@@ -18,7 +18,10 @@ public class AppController {
 
 
     public boolean isGameRunning() {
-        return false;
+       return false;
+    }
+
+    public void loadGame() {
     }
 
     public void newGame() {
@@ -28,8 +31,5 @@ public class AppController {
     }
 
     public void saveGame() {
-    }
-
-    public void loadGame() {
     }
 }

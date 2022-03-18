@@ -304,7 +304,12 @@ class Repository implements IRepository {
 				// TODO this should be more defensive
 				String name = rs.getString(PLAYER_NAME);
 				String colour = rs.getString(PLAYER_COLOUR);
-				Player player = new Player(game, colour ,name);
+				Player player = new Player(game, colour, name) {
+					@Override
+					public String getStatusMessage() {
+						return null;
+					}
+				};
 				game.addPlayer(player);
 				
 				int x = rs.getInt(PLAYER_POSITION_X);
