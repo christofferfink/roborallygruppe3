@@ -49,6 +49,11 @@ public abstract class Board extends Subject {
 
     private Player current;
 
+    private Checkpoint checkpoint;
+
+    private final List<Player> player = new ArrayList<Player>();
+    private Player current;
+
     private Phase phase = INITIALISATION;
 
     private int step = 0;
@@ -59,6 +64,7 @@ public abstract class Board extends Subject {
         this.width = width;
         this.height = height;
         spaces = new Space[width][height];
+        this.checkpoint = new Checkpoint(this, ((int) (Math.random() * width)), ((int) (Math.random() * height)));
         for (int x = 0; x < width; x++) {
             for(int y = 0; y < height; y++) {
                 Space space = new Space(this, x, y) {
